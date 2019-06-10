@@ -45,3 +45,12 @@ Deadline:
 * Install & configure Mongoose
 * Set blog model
 * Set product model
+
+#### Refactor
+* Move schemas to own files
+* Move routes to own files
+* Update app.js to redirect
+
+#### SeedDB
+* Write seeds.js to auto populate db
+* Call in app.js
