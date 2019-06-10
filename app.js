@@ -94,7 +94,7 @@ app.post("/blog", (req,res) => {
 		},
 		body: req.body.body,
 	}
-	console.log(newBlog);
+	blogs.push(newBlog);
 	res.redirect("blog");
 })
 
