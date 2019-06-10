@@ -16,7 +16,39 @@ app.get("/about", (req,res) => {
 });
 
 app.get("/products", (req,res) => {
-	res.render("products");
+	const products = [
+		{
+			name: "Van One",
+			image: {
+				src: "http://source.unsplash.com/ndiBRRnb7II",
+				alt: "Van One product image"
+			},
+			features: ["wheels","windows","doors"],
+			details: "Lorem ipsum blah blah blah",
+			price: "3000"
+		},
+		{
+			name: "Van Two",
+			image: {
+				src: "http://source.unsplash.com/ndiBRRnb7II",
+				alt: "Van One product image"
+			},
+			features: ["wheels","windows","doors"],
+			details: "Lorem ipsum blah blah blah",
+			price: "3000"
+		},
+		{
+			name: "Van Three",
+			image: {
+				src: "http://source.unsplash.com/ndiBRRnb7II",
+				alt: "Van One product image"
+			},
+			features: ["wheels","windows","doors"],
+			details: "Lorem ipsum blah blah blah",
+			price: "3000"
+		},
+	]
+	res.render("products", {products: products});
 });
 
 app.get("/blog", (req,res) => {

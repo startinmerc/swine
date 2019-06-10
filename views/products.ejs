@@ -4,7 +4,7 @@
 	<%products.forEach((product,index) => {%>
 	<div>
 		<h4><%=product.name%></h4>
-		<img src="<%=product.picture.src%>" alt="<%=product.picture.alt%>" />
+		<img src="<%=product.image.src%>" alt="<%=product.image.alt%>" />
 		<ul>
 			<%product.features.forEach((feature) => {%>
 				<li><%=feature%></li>
