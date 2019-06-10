@@ -38,3 +38,10 @@ Deadline:
 * Add form page
 * Add page route
 * Add POST route
+
+### V1.1
+
+#### Add Mongoose
+* Install & configure Mongoose
+* Set blog model
+* Set product model
