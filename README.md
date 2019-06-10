@@ -28,3 +28,8 @@ Deadline:
 * Add ejs logic
 * Modify route
 * Add seed data
+
+#### New Blog
+* Add new blog form page
+* Add route for above
+* Add POST route

@@ -48,7 +48,7 @@ app.get("/products", (req,res) => {
 			price: "3000"
 		},
 	]
-	res.render("products", {products: products});
+	res.render("products/index", {products: products});
 });
 
 app.get("/blog", (req,res) => {
@@ -78,8 +78,25 @@ app.get("/blog", (req,res) => {
 			body: "Lorem"
 		}
 	]
-	res.render("blog", {blogs:blogs});
+	res.render("blog/index", {blogs:blogs});
 });
+
+app.get("/blog/new", (req,res) => {
+	res.render("blog/new")
+});
+
+app.post("/blog", (req,res) => {
+	let newBlog = {
+		title: req.body.title,
+		image: {
+			src: req.body.imgSrc,
+			alt: req.body.imgAlt
+		},
+		body: req.body.body,
+	}
+	console.log(newBlog);
+	res.redirect("blog");
+})
 
 app.listen(3000, process.env.IP, () => {
 	console.log("Server Running");

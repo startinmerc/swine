@@ -1,0 +1,14 @@
+<%include ../partials/header.ejs%>
+<h1>New Blog</h1>
+<form action="/blog" method="POST">
+	<label for="title">Title</label>
+	<input type="text" name="title" placeholder="title" id="title">
+	<label for="img-src">Image Link</label>
+	<input type="text" name="imgSrc" placeholder="image link" id="imgSrc">
+	<label for="img-alt">Image Caption</label>
+	<input type="text" name="imgAlt" placeholder="image caption" id="imgAlt">
+	<label for="body">Body</label>
+	<input type="text" name="body" placeholder="body" id="body">
+	<button>Submit</button>
+</form>
+<%include ../partials/footer.ejs%>
