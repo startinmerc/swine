@@ -6,17 +6,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
-
-app.get("/", (req,res) => {
-	res.render("landing");
-});
-
-app.get("/about", (req,res) => {
-	res.render("about");
-});
-
-app.get("/products", (req,res) => {
-	const products = [
+const products = [
 		{
 			name: "Van One",
 			image: {
@@ -47,12 +37,8 @@ app.get("/products", (req,res) => {
 			details: "Lorem ipsum blah blah blah",
 			price: "3000"
 		},
-	]
-	res.render("products/index", {products: products});
-});
-
-app.get("/blog", (req,res) => {
-	const blogs = [
+	];
+const blogs = [
 		{
 			title: "Blog One",
 			image: { 
@@ -78,6 +64,40 @@ app.get("/blog", (req,res) => {
 			body: "Lorem"
 		}
 	]
+
+
+app.get("/", (req,res) => {
+	res.render("landing");
+});
+
+app.get("/about", (req,res) => {
+	res.render("about");
+});
+
+app.get("/products", (req,res) => {
+	res.render("products/index", {products: products});
+});
+
+app.get("/products/new", (req,res) => {
+	res.render("products/new")
+});
+
+app.post("/products", (req,res) => {
+	let newProduct = {
+		name: req.body.name,
+		image: {
+			src: req.body.imgSrc,
+			alt: req.body.imgAlt
+		},
+		features: req.body.features.split(" "),
+		details: req.body.details,
+		price: req.body.price
+	}
+	products.push(newProduct);
+	res.redirect("products");
+});
+
+app.get("/blog", (req,res) => {
 	res.render("blog/index", {blogs:blogs});
 });
 
@@ -96,7 +116,7 @@ app.post("/blog", (req,res) => {
 	}
 	blogs.push(newBlog);
 	res.redirect("blog");
-})
+});
 
 app.listen(3000, process.env.IP, () => {
 	console.log("Server Running");

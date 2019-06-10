@@ -1,0 +1,24 @@
+<%include ../partials/header.ejs%>
+<h1>New Product</h1>
+<form action="/products" method="POST">
+	<label for="name">name</label>
+	<input type="text" name="name" placeholder="name" id="name">
+	
+	<label for="imgSrc">Image Link</label>
+	<input type="text" name="imgSrc" placeholder="image link" id="imgSrc">
+	
+	<label for="imgAlt">Image Caption</label>
+	<input type="text" name="imgAlt" placeholder="image caption" id="imgAlt">
+
+	<label for="features">Features</label>
+	<input type="text" name="features" placeholder="features" id="features">
+	
+	<label for="details">Details</label>
+	<input type="text" name="details" placeholder="details" id="details">
+		
+	<label for="price">Price</label>
+	<input type="number" name="price" placeholder="price" id="price">
+	
+	<button>Submit</button>
+</form>
+<%include ../partials/footer.ejs%>

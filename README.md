@@ -10,7 +10,7 @@ You must create a website that will mainly provide customer support for the comp
 Deadline:
 10 days
 
-###V1
+### V1
 
 #### Initial setup
 * Add pages & setup routes
@@ -32,4 +32,9 @@ Deadline:
 #### New Blog
 * Add new blog form page
 * Add route for above
+* Add POST route
+
+#### New Product
+* Add form page
+* Add page route
 * Add POST route
