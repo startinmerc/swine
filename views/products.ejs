@@ -1,12 +1,18 @@
 <%include partials/header.ejs%>
 <h1>Products</h1>
 <div>
-	<ul>
-		<li>Product name</li>
-		<li>Product picture</li>
-		<li>Product features</li>
-		<li>Product details</li>
-		<li>Product price</li>
-	</ul>
+	<%products.forEach((product,index) => {%>
+	<div>
+		<h4><%=product.name%></h4>
+		<img src="<%=product.picture.src%>" alt="<%=product.picture.alt%>" />
+		<ul>
+			<%product.features.forEach((feature) => {%>
+				<li><%=feature%></li>
+			<%});%>
+		</ul>
+		<p><%=product.details%></p>
+		<p><%=product.price%></p>
+	</div>
+	<%});%>
 </div>
 <%include partials/footer.ejs%>
