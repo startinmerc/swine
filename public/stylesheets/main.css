@@ -1,0 +1,24 @@
+:root {
+	--main-red: #C92E2E;
+	--light-red: #EE6352;
+	--dark-red: #4A1111;
+	--yellow: #F2DC5D;
+	--green: #59CD90;
+}
+
+body {
+	background-color: white;
+	margin: 0;
+}
+
+nav {
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}

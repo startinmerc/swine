@@ -9,3 +9,12 @@ You must create a website that will mainly provide customer support for the comp
 
 Deadline:
 10 days
+
+###V1
+
+#### Initial setup
+* Add pages & setup routes
+
+#### Basic styling
+* Create partials
+* Add skeleton templates
