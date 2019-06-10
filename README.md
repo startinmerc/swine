@@ -18,3 +18,13 @@ Deadline:
 #### Basic styling
 * Create partials
 * Add skeleton templates
+
+#### Products page
+* Add ejs logic
+* Modify route
+* Add seed data
+
+#### Blog page
+* Add ejs logic
+* Modify route
+* Add seed data

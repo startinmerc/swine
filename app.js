@@ -52,7 +52,33 @@ app.get("/products", (req,res) => {
 });
 
 app.get("/blog", (req,res) => {
-	res.render("blog");
+	const blogs = [
+		{
+			title: "Blog One",
+			image: { 
+				src: "http://source.unsplash.com/random/400x300",
+				alt: "Blog image"
+			},
+			body: "Lorem"
+		},
+		{
+			title: "Blog Two",
+			image: { 
+				src: "http://source.unsplash.com/random/400x300",
+				alt: "Blog image"
+			},
+			body: "Lorem"
+		},
+		{
+			title: "Blog Three",
+			image: { 
+				src: "http://source.unsplash.com/random/400x300",
+				alt: "Blog image"
+			},
+			body: "Lorem"
+		}
+	]
+	res.render("blog", {blogs:blogs});
 });
 
 app.listen(3000, process.env.IP, () => {
