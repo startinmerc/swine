@@ -54,3 +54,10 @@ Deadline:
 #### SeedDB
 * Write seeds.js to auto populate db
 * Call in app.js
+
+### V1.2
+
+#### Navbar
+* Implement color pallette
+* Change fonts
+* Style navbar, including hover states
