@@ -61,3 +61,9 @@ Deadline:
 * Implement color pallette
 * Change fonts
 * Style navbar, including hover states
+
+#### Landing page styling 1
+* Put in container
+* Basic section splitting
+* Style odd/even sections
+* Add filler content

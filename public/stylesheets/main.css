@@ -4,7 +4,7 @@
 	--dark-red: #4A1111;
 	--yellow: #F2DC5D;
 	--green: #59CD90;
-	--white: #F2F2F2;
+	--white: #FBFBFB;
 	--black: #252524;
 
 	--display: 'Muli', sans-serif;
@@ -22,6 +22,18 @@ a {
 	text-decoration: none;
 	color: var(--black);
 }
+
+h1, h2, h3, h4 {
+	font-family: var(--display);
+}
+
+.container {
+	width: 100%;
+	background-color: var(--white);
+	min-height: calc(100vh - 3rem);
+}
+
+/*NAVBAR STYLING*/
 
 nav {
 	position: sticky;
@@ -70,3 +82,44 @@ nav ul {
 	background-color: var(--main-red);
 	border-bottom: none;
 }
+
+/*LANDING STYLING*/
+.landing-section {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--dark-red);
+}
+
+.landing-section h1 {
+	font-size: 8rem;
+	margin: 0;
+}
+
+.landing-section-text {
+	max-width: 50vw;
+	flex-grow: 1;
+}
+
+.landing-section:nth-of-type(odd) {
+	align-items: flex-end;
+}
+
+.landing-section:nth-of-type(even) {
+	align-items: flex-start;
+}
+
+.landing-section:nth-of-type(odd) .landing-section-text {
+	background-color: var(--main-red);
+	text-align: right;
+}
+
+.landing-section:nth-of-type(even) .landing-section-text {
+	background-color: var(--light-red);
+	text-align: left;
+}
+
+/*.landing-section:nth-of-type(1) {
+	background-image: url("http://source.unsplash.com/ndiBRRnb7II");
+	background-position: center;
+}*/
