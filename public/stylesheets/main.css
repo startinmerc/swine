@@ -43,6 +43,7 @@ nav {
 	background-color: var(--white);
 	display: flex;
 	align-items: flex-end;
+	z-index: 1000;
 }
 
 nav ul {
@@ -54,13 +55,13 @@ nav ul {
 	padding: 1.2rem 1rem 0.7rem 1rem;
 	cursor: pointer;
 	border-left: 2px solid var(--main-red);
-	border-bottom: 0rem solid var(--main-red);
+	border-bottom: 0rem solid var(--yellow);
 	transition: border-bottom 150ms linear, padding-bottom 150ms linear;
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-item:focus-within {
 	padding-bottom: 0px;
-	border-bottom: 0.7rem solid var(--main-red);
+	border-bottom-width: 0.7rem;
 }
 
 .nav-item:last-of-type {
@@ -77,7 +78,7 @@ nav ul {
 	transition: color, background-color 150ms linear;
 }
 
-#nav-brand:hover {
+#nav-brand:hover, #nav-brand:focus-within {
 	color: var(--white);
 	background-color: var(--main-red);
 	border-bottom: none;
@@ -87,8 +88,8 @@ nav ul {
 .landing-section {
 	height: 50vh;
 	display: flex;
-	flex-direction: column;
-	background-color: var(--dark-red);
+	flex-direction: row;
+	background-color: transparent;
 }
 
 .landing-section h1 {
@@ -97,29 +98,110 @@ nav ul {
 }
 
 .landing-section-text {
-	max-width: 50vw;
-	flex-grow: 1;
+	max-width: 80vw;
+	height: 50vh;
 }
 
 .landing-section:nth-of-type(odd) {
-	align-items: flex-end;
+	justify-content: flex-end;
+	background-color: var(--main-red);
 }
 
 .landing-section:nth-of-type(even) {
-	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: var(--light-red);
 }
 
 .landing-section:nth-of-type(odd) .landing-section-text {
 	background-color: var(--main-red);
 	text-align: right;
+	padding-right: 2.5rem;
 }
 
 .landing-section:nth-of-type(even) .landing-section-text {
 	background-color: var(--light-red);
 	text-align: left;
+	padding-left: 2.5rem;
 }
 
-/*.landing-section:nth-of-type(1) {
+.sign-up-button {
+	padding: 0.6rem 2rem;
+	border-radius: 0.4rem;
+	border: 0.1rem solid var(--yellow);
+	background-color: var(--yellow);
+	color: var(--black);
+	font-weight: bold;
+}
+
+.sign-up-button:hover, .sign-up-button:focus-within {
+	color: var(--white);
+}
+
+.sign-up-button:active {
+	background-color: var(--white);
+	color: var(--yellow);
+}
+
+.sign-cta {
+	height: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    padding: 0 2rem;
+    margin-left: auto;
+}
+
+.sign-cta p {
+	margin-top: 1rem;
+}
+
+.sign-cta a {
+	margin-bottom: 1rem;
+}
+#top-section {
 	background-image: url("http://source.unsplash.com/ndiBRRnb7II");
-	background-position: center;
-}*/
+	background-position: left;
+}
+
+#top-section .landing-section-text {
+	width: 40vw;
+}
+
+#top-section .landing-section-text::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10vw 50vh 0;
+	border-color: transparent var(--main-red) transparent transparent;
+	transform: translateX(-50vw);
+}
+
+#sign-up-form {
+	width: 100%;
+	justify-content: center;
+}
+
+#sign-up-form .landing-section-text {
+	text-align: center;
+	padding: 0;
+}
+
+#sign-up-form h2 {
+	font-size: 3.4rem;
+}
+
+#sign-up-form h3 {
+	margin: 0
+}
+
+#sign-up-form input {
+	font-size: 2rem;
+	width: 40vw;
+	margin-bottom: 1rem;
+}

@@ -67,3 +67,15 @@ Deadline:
 * Basic section splitting
 * Style odd/even sections
 * Add filler content
+
+#### Signup CTA
+* Contain CTA in each section
+* Style to pop out
+* Put form template on page footer
+
+#### Header section
+* Background as picture
+* Add pseudo element to create diagonal shape
+
+#### Signup Form
+* Style spacing & font sizing

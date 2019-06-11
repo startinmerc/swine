@@ -1,24 +1,28 @@
 <%include partials/header.ejs%>
 <div class="container">
-	<section class="landing-section">
+	<section class="landing-section" id="top-section">
 		<div class="landing-section-text">
 			<h1>Swine</h1>
 			<h3>Luxury minivans</h3>
-			<p>Sign up for our newsletter!</p>
-			<button class="sign-up-button">Sign Up</button>
+			<div class="sign-cta">
+				<p>Sign up for our newsletter!</p>
+				<a class="sign-up-button" href="#sign-up-form">Sign Up</a>
+			</div>
 		</div>
 	</section>
 	<section class="landing-section">
 		<div class="landing-section-text">
-		<h2>Our Values</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Sign up for our newsletter!</p>
-		<button class="sign-up-button">Sign Up</button>
+			<h2>Our Values</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="sign-cta">
+				<p>Sign up for our newsletter!</p>
+				<a class="sign-up-button" href="#sign-up-form">Sign Up</a>
+			</div>
 		</div>
 	</section>
 	<section class="landing-section">
@@ -31,9 +35,19 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p>Sign up for our newsletter!</p>
-		<button class="sign-up-button">Sign Up</button>
+		<a class="sign-up-button" href="#sign-up-form">Sign Up</a>
 		</div>
 	</section>
+	<section class="landing-section" id="sign-up-form">
+		<div class="landing-section-text">
+			<h2>Sign Up for Our Newsletter</h2>
+			<form>
+				<label for="email"><h3>Email</h3></label><br>
+				<input type="text" name="email" id="email" placeholder="someone@example.com"><br>
+				<button class="sign-up-button">Submit</button>
+			</form>
+		</div>
+
 </div>
 
 <%include partials/footer.ejs%>
