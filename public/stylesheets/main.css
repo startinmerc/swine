@@ -89,7 +89,6 @@ nav ul {
 	height: 50vh;
 	display: flex;
 	flex-direction: row;
-	background-color: transparent;
 }
 
 .landing-section h1 {
@@ -162,8 +161,9 @@ nav ul {
 .sign-cta a {
 	margin-bottom: 1rem;
 }
+
 #top-section {
-	background-image: url("http://source.unsplash.com/ndiBRRnb7II");
+	/*background-image: url("http://source.unsplash.com/ndiBRRnb7II");*/
 	background-position: left;
 }
 
@@ -188,6 +188,7 @@ nav ul {
 }
 
 #sign-up-form .landing-section-text {
+	margin: auto;
 	text-align: center;
 	padding: 0;
 }
@@ -204,4 +205,7 @@ nav ul {
 	font-size: 2rem;
 	width: 40vw;
 	margin-bottom: 1rem;
+	border: none;
+    background-color: var(--white);
+    text-align: center;
 }
