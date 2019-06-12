@@ -89,6 +89,7 @@ nav ul {
 	height: 50vh;
 	display: flex;
 	flex-direction: row;
+	background-color: var(--yellow);
 }
 
 .landing-section h1 {
@@ -97,30 +98,31 @@ nav ul {
 }
 
 .landing-section-text {
-	max-width: 80vw;
+	max-width: 50vw;
 	height: 50vh;
+	padding: 0 2.5rem;
 }
 
 .landing-section:nth-of-type(odd) {
 	justify-content: flex-end;
-	background-color: var(--main-red);
+	/*background-color: var(--main-red);*/
 }
 
 .landing-section:nth-of-type(even) {
 	justify-content: flex-start;
-	background-color: var(--light-red);
+	/*background-color: var(--light-red);*/
 }
 
 .landing-section:nth-of-type(odd) .landing-section-text {
 	background-color: var(--main-red);
 	text-align: right;
-	padding-right: 2.5rem;
+	/*padding-right: 2.5rem;*/
 }
 
 .landing-section:nth-of-type(even) .landing-section-text {
 	background-color: var(--light-red);
 	text-align: left;
-	padding-left: 2.5rem;
+	/*padding-left: 2.5rem;*/
 }
 
 .sign-up-button {
@@ -168,9 +170,23 @@ nav ul {
 }
 
 #top-section .landing-section-text {
+	float: left;
 	width: 40vw;
+	padding-left: 0;
 }
 
+/*.leftTriangle {    
+	width: 10vw;
+	height: 50vh;
+	background-color: #7db9e8;
+	margin: 0 25px 5px 0;
+	float: left;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+	-webkit-shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
+    shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+*/
 #top-section .landing-section-text::before {
 	content: "";
 	position: absolute;

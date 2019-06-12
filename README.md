@@ -80,3 +80,8 @@ Deadline:
 #### Signup Form
 * Style spacing & font sizing
 * Add post routing
+
+#### Landing page styling 2
+* Tweak section widths
+* Draft clip-path for header section
+* Minor style changes
