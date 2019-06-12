@@ -27,10 +27,17 @@ h1, h2, h3, h4 {
 	font-family: var(--display);
 }
 
+h1 {
+	font-size: 8rem;
+	margin: 0;
+}
+
 .container {
-	width: 100%;
+	/*width: 100%;*/
 	background-color: var(--white);
 	min-height: calc(100vh - 3rem);
+	margin: 0 2.5rem;
+	padding: 0 2.5rem;
 }
 
 /*NAVBAR STYLING*/
@@ -85,16 +92,15 @@ nav ul {
 }
 
 /*LANDING STYLING*/
-.landing-section {
+.container.landing {
+	padding: 0;
+}
+
+.landing section {
 	height: 50vh;
 	display: flex;
 	flex-direction: row;
 	background-color: var(--yellow);
-}
-
-.landing-section h1 {
-	font-size: 8rem;
-	margin: 0;
 }
 
 .landing-section-text {
@@ -103,23 +109,23 @@ nav ul {
 	padding: 0 2.5rem;
 }
 
-.landing-section:nth-of-type(odd) {
+.landing section:nth-of-type(odd) {
 	justify-content: flex-end;
 	/*background-color: var(--main-red);*/
 }
 
-.landing-section:nth-of-type(even) {
+.landing section:nth-of-type(even) {
 	justify-content: flex-start;
 	/*background-color: var(--light-red);*/
 }
 
-.landing-section:nth-of-type(odd) .landing-section-text {
+.landing section:nth-of-type(odd) .landing-section-text {
 	background-color: var(--main-red);
 	text-align: right;
 	/*padding-right: 2.5rem;*/
 }
 
-.landing-section:nth-of-type(even) .landing-section-text {
+.landing section:nth-of-type(even) .landing-section-text {
 	background-color: var(--light-red);
 	text-align: left;
 	/*padding-left: 2.5rem;*/
@@ -214,7 +220,7 @@ nav ul {
 }
 
 #sign-up-form h3 {
-	margin: 0
+	margin: 0;
 }
 
 #sign-up-form input {
@@ -224,4 +230,40 @@ nav ul {
 	border: none;
     background-color: var(--white);
     text-align: center;
+}
+
+/*ABOUT STYLING*/
+.about h1 {
+	color: var(--main-red);
+}
+
+.about h3 {
+	color: var(--light-red);
+}
+
+.about .sign-cta {
+	margin: 0 auto 1rem auto;
+	background-color: lightgrey;
+}
+
+.testimonials-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 51rem;
+}
+
+blockquote {
+	width: 15rem;
+	/*height: 15rem;*/
+	padding: 1rem;
+	margin: 0;
+}
+
+cite {
+	color: var(--main-red);
+}
+
+blockquote:nth-of-type(even) {
+	background-color: lightgrey;
 }

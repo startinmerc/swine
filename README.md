@@ -85,3 +85,7 @@ Deadline:
 * Tweak section widths
 * Draft clip-path for header section
 * Minor style changes
+
+#### About page
+* Add skeleton frame with filler content
+* Add styling
