@@ -299,3 +299,79 @@ blockquote:nth-of-type(odd) {
 blockquote:nth-of-type(even) {
 	background-color: #CECECE;
 }
+
+/*PRODUCTS*/
+.product-section {
+	display: flex;
+	padding: 2.5rem;
+	background-color: #E5E5E5
+}
+
+.product-section:nth-of-type(even) {
+	flex-direction: row-reverse;
+	background-color: #CECECE;
+}
+
+.product-section:nth-of-type(even) .product-text {
+	text-align: right;
+	margin-right: 1rem;
+	margin-left: 0;
+}
+
+.product-section:nth-of-type(even) .product-features li {
+	margin: 0 0 0 5px;
+}
+
+.product-image {
+	height: 15rem;
+	width: 22.5rem;
+	border: 3px solid black;
+	border-radius: 5px;
+	display: inline;	
+	overflow: hidden;
+}
+
+.product-image img {
+	height: 100%;
+	width: auto;
+	transform-origin: center;
+	transition: all 200ms ease-in;
+}
+
+.product-image:hover img {
+	transform: scale(1.1);
+}
+
+.product-text {
+	margin-left: 1rem;
+}
+
+.product-name {
+	color: var(--main-red);
+}
+
+.product-features {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin: 0.3rem 0;
+}
+
+.product-features li {
+	list-style: none;
+    width: 90px;
+    margin: 0 5px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+}
+
+.product-features li::before {
+	content: '#';
+	color: #CECECE;
+}
+
+.product-price {
+	font-weight: bold;
+}
