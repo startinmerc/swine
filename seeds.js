@@ -11,7 +11,7 @@ const products = [
 			alt: "Van One product image"
 		},
 		features: ["wheels","windows","doors"],
-		details: "Lorem ipsum blah blah blah",
+		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},
 	{
@@ -21,7 +21,7 @@ const products = [
 			alt: "Van One product image"
 		},
 		features: ["wheels","windows","doors"],
-		details: "Lorem ipsum blah blah blah",
+		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},
 	{
@@ -31,7 +31,7 @@ const products = [
 			alt: "Van One product image"
 		},
 		features: ["wheels","windows","doors"],
-		details: "Lorem ipsum blah blah blah",
+		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},
 ];
@@ -43,7 +43,7 @@ const blogs = [
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
 		},
-		body: "Lorem"
+		body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		title: "Blog Two",
@@ -51,7 +51,7 @@ const blogs = [
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
 		},
-		body: "Lorem"
+		body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	},
 	{
 		title: "Blog Three",
@@ -59,7 +59,7 @@ const blogs = [
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
 		},
-		body: "Lorem"
+		body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 	}
 ];
 
