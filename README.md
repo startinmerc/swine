@@ -85,7 +85,19 @@ Deadline:
 * Tweak section widths
 * Draft clip-path for header section
 * Minor style changes
+* Add slanted edge to all sections
 
 #### About page
 * Add skeleton frame with filler content
 * Add styling
+
+### Product page
+* Add container
+* Add classes to listings
+* Style listings, including alternate layouts
+* Add zoom transition to images
+
+### Blog page
+* Add container
+* Add classes to entries
+* Shorten blog texts

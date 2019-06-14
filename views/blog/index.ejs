@@ -1,12 +1,15 @@
 <%include ../partials/header.ejs%>
-<h1>Blog</h1>
-<div>
+<div class="container blogs">
+	<h1>Swine Blog</h1>
 	<%blogs.forEach((blog) => {%>
-	<div>
-		<h3><%=blog.title%></h3>
-		<img src="<%=blog.image.src%>" alt="<%=blog.image.src%>">
-		<p><%=blog.body%></p>
-	</div>
+		<div class="blog-entry">
+			<a href="<%=blog._id%>"><h3 class="blog-title"><%=blog.title%></h3></a>
+			<div class="blog-image">
+				<img src="<%=blog.image.src%>" 
+					alt="<%=blog.image.src%>">
+			</div>
+			<a href="<%=blog._id%>"><p class="blog-body"><%=blog.body%></p></a>
+		</div>
 	<%});%>
 </div>
 <%include ../partials/footer.ejs%>

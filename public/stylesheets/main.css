@@ -327,7 +327,7 @@ blockquote:nth-of-type(even) {
 	width: 22.5rem;
 	border: 3px solid black;
 	border-radius: 5px;
-	display: inline;	
+	display: inline-block;
 	overflow: hidden;
 }
 
@@ -344,6 +344,7 @@ blockquote:nth-of-type(even) {
 
 .product-text {
 	margin-left: 1rem;
+	width: 50%;
 }
 
 .product-name {
@@ -374,4 +375,54 @@ blockquote:nth-of-type(even) {
 
 .product-price {
 	font-weight: bold;
+}
+
+/*BLOGS*/
+.blogs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog-entry {
+	width: 22.5rem;
+	margin: 0 auto;
+	background-color: #E5E5E5;
+	padding: 1.5rem;
+	margin: 1rem;
+	border-radius: 0.4rem;
+}
+
+.blog-title {
+	text-align: center;
+	margin-bottom: 0.5rem;
+	width: 100%;
+}
+
+.blog-image {
+	height: 300px;
+	width: calc(100% - 6px);
+	border: 3px solid black;
+	border-radius: 5px;
+	display: inline-block;	
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.blog-image img {
+	height: 100%;
+	width: auto;
+	transform-origin: center;
+	transition: all 200ms ease-in;
+}
+
+.blog-body {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 0.5rem;
+}
+
+.blog-entry:hover img {
+	transform: scale(1.1);
 }
