@@ -101,3 +101,8 @@ Deadline:
 * Add container
 * Add classes to entries
 * Shorten blog texts
+
+### Show Blog
+* Add show individual blog route
+* Add page
+* Add page container, skeleton frame

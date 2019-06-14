@@ -3,12 +3,12 @@
 	<h1>Swine Blog</h1>
 	<%blogs.forEach((blog) => {%>
 		<div class="blog-entry">
-			<a href="<%=blog._id%>"><h3 class="blog-title"><%=blog.title%></h3></a>
+			<a href="blog/<%=blog._id%>"><h3 class="blog-title"><%=blog.title%></h3></a>
 			<div class="blog-image">
 				<img src="<%=blog.image.src%>" 
 					alt="<%=blog.image.src%>">
 			</div>
-			<a href="<%=blog._id%>"><p class="blog-body"><%=blog.body%></p></a>
+			<a href="blog/<%=blog._id%>"><p class="blog-body"><%=blog.body%></p></a>
 		</div>
 	<%});%>
 </div>

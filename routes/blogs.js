@@ -14,6 +14,17 @@ router.get("/", (req,res) => {
 	});
 });
 
+// SHOW INDIVIDUAL
+router.get("/:id", (req,res) => {
+	Blog.findById(req.params.id, (err,foundBlog) => {
+		if (err || !foundBlog) {
+			res.redirect("back");
+		} else {
+			res.render("blog/show", {blog:foundBlog})
+		}
+	});
+});
+
 // GET NEW FORM
 router.get("/new", (req,res) => {
 	res.render("blog/new")
