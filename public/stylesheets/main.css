@@ -184,18 +184,6 @@ nav ul {
 	padding-left: 0;
 }
 
-/*.leftTriangle {    
-	width: 10vw;
-	height: 50vh;
-	background-color: #7db9e8;
-	margin: 0 25px 5px 0;
-	float: left;
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-	-webkit-shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
-    shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
-}
-*/
 .landing section:nth-of-type(odd) .landing-section-text::before {
 	content: "";
 	position: absolute;
@@ -270,19 +258,44 @@ nav ul {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 51rem;
+	padding-bottom: 2.5rem;
 }
 
 blockquote {
 	width: 15rem;
-	/*height: 15rem;*/
 	padding: 1rem;
 	margin: 0;
+	position: relative;
+}
+
+blockquote p::before {
+    content: '"';
+    position: absolute;
+    font-size: 10rem;
+    font-family: cursive;
+    margin-top: -5rem;
+    opacity: 0.2;
+}
+
+blockquote p::after {
+	content: '"';
+    position: absolute;
+    font-size: 10rem;
+    font-family: cursive;
+    margin-top: -8rem;
+    margin-left: 8rem;
+    transform: rotate(180deg);
+    opacity: 0.2;
 }
 
 cite {
 	color: var(--main-red);
 }
 
+blockquote:nth-of-type(odd) {
+	background-color: #E5E5E5;
+}
+
 blockquote:nth-of-type(even) {
-	background-color: lightgrey;
+	background-color: #CECECE;
 }
