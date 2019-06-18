@@ -25,7 +25,7 @@ p {
 
 .navbar-light .navbar-brand {
 	color: var(--primary);
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 
 .row-large {
@@ -34,9 +34,33 @@ p {
 
 .display-1 {
 	color: var(--primary);
-	/*font-size: 8rem;*/
 }
 
+nav a {
+	font-family: var(--display);
+	font-size: 1.3rem;
+}
+
+#sign-up-form {
+	background-color: var(--primary);
+}
+
+#sign-up-form .landing-section-text::before {
+	display: none;
+}
+
+footer a {
+	color: var(--white);
+}
+
+footer a:hover, footer a:focus {
+	color: var(--primary);
+}
+/*
+footer .list-group-item {
+	border: none;
+}
+*/
 /*LANDING*/
 
 .landing #top-section {
@@ -76,10 +100,6 @@ p {
 
 .newsletter-cta {
 	width: 15rem;
-}
-
-#sign-up-form .landing-section-text::before {
-	display: none;
 }
 
 /*ABOUT*/
@@ -130,4 +150,10 @@ blockquote p::before {
 
 .product-price {
 	font-size: 1.3rem;
+}
+
+@media (max-width: 576px) {
+	.display-1 {
+		font-size: 2rem;
+	}
 }
