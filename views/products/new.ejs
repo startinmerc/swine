@@ -1,24 +1,48 @@
 <%include ../partials/header.ejs%>
-<h1>New Product</h1>
-<form action="/products" method="POST">
-	<label for="name">name</label>
-	<input type="text" name="name" placeholder="name" id="name">
-	
-	<label for="imgSrc">Image Link</label>
-	<input type="text" name="imgSrc" placeholder="image link" id="imgSrc">
-	
-	<label for="imgAlt">Image Caption</label>
-	<input type="text" name="imgAlt" placeholder="image caption" id="imgAlt">
+<main class="container">
+	<div class="row pt-5">
+		<h1 class="mx-auto">New Product</h1>
+	</div>
 
-	<label for="features">Features</label>
-	<input type="text" name="features" placeholder="features" id="features">
-	
-	<label for="details">Details</label>
-	<input type="text" name="details" placeholder="details" id="details">
-		
-	<label for="price">Price</label>
-	<input type="number" name="price" placeholder="price" id="price">
-	
-	<button>Submit</button>
-</form>
+	<div class="row mb-5">
+		<div class="col-12">
+			<form class="row" action="/products" method="POST">
+			<div class="form-group col-12 col-lg-6">
+				<label for="name">Product Name</label>
+				<input class="form-control" type="text" name="name" placeholder="Name" id="name">
+			</div>
+			<div class="form-group col-12 col-lg-6">
+				<label for="price">Price</label>
+				<input class="form-control" type="number" name="price" placeholder="Price" id="price">
+			</div>
+			<div class="form-group col-12">
+				<label for="imgSrc">Image Link</label>
+				<input class="form-control" type="text" name="imgSrc" placeholder="Image Link" id="imgSrc">
+			</div>
+			<div class="form-group col-12">
+				<label for="imgAlt">Image Caption</label>
+				<input class="form-control" type="text" name="imgAlt" placeholder="Image Caption" id="imgAlt">
+			</div>
+			<div class="form-group col-12 col-lg-12">
+				<label for="features">Features</label>
+				<input class="form-control" type="text" name="features" placeholder="Features" id="features">
+			</div>
+<!-- 			<div class="form-group form-check form-inline col-12">
+				<input type="checkbox" class="form-check-input" id="feature-1" name="feature-1">
+				<label class="form-check-label mr-3" for="feature-1">Feature 1</label>
+				<input type="checkbox" class="form-check-input" id="feature-2" name="feature-2">
+				<label class="form-check-label mr-3" for="feature-2">Feature 2</label>
+				<input type="checkbox" class="form-check-input" id="feature-3" name="feature-3">
+				<label class="form-check-label mr-3" for="feature-3">Feature 3</label>
+				<input type="checkbox" class="form-check-input" id="feature-4" name="feature-4">
+				<label class="form-check-label mr-3" for="feature-4">Feature 4</label>
+			</div> -->
+			<div class="form-group col-12 col-lg-12">
+				<label for="details">Details</label>
+				<textarea class="form-control" type="text" name="details" placeholder="Details" id="details" rows="4"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary mx-auto w-50">Submit</button>
+			</form>
+		</div>
+	</div>
 <%include ../partials/footer.ejs%>

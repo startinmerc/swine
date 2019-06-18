@@ -137,3 +137,12 @@ So a migration to actual bootstrap made a lot more sense.
 * Add breakpoint style change for display text
 * Add navbar-collapse button
 * Other breakpoint styling as needed
+
+#### Footer
+* Add links to footer
+* Expand & format as needed
+* Move signup form to footer
+* Take `</main>` out of all views & put in footer
+
+#### New Pages
+* Add bootstrap to NEW routes
