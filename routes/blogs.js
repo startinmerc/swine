@@ -14,6 +14,11 @@ router.get("/", (req,res) => {
 	});
 });
 
+// GET NEW FORM
+router.get("/new", (req,res) => {
+	res.render("blog/new");
+});
+
 // SHOW INDIVIDUAL
 router.get("/:id", (req,res) => {
 	Blog.findById(req.params.id, (err,foundBlog) => {
@@ -25,11 +30,6 @@ router.get("/:id", (req,res) => {
 	});
 });
 
-// GET NEW FORM
-router.get("/new", (req,res) => {
-	res.render("blog/new")
-});
-
 // POST NEW BLOG
 router.post("/", (req,res) => {
 	let newBlog = {
@@ -39,7 +39,7 @@ router.post("/", (req,res) => {
 			alt: req.body.imgAlt
 		},
 		body: req.body.body,
-	}
+	};
 	Blog.create(newBlog, (err,newlyCreated) => {
 		if (err) {
 			console.log(err);
