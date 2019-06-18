@@ -114,3 +114,11 @@ So a migration to actual bootstrap made a lot more sense.
 ###Bootstrap redesign
 * Add to partials
 * Change to new stylesheet
+
+###Landing Page
+* Add bootstrap classes
+* Add customisation via new CSS
+
+###About Page
+* Add Boostrap classes
+* Add customisation via new CSS

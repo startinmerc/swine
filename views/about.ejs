@@ -1,56 +1,46 @@
 <%include partials/header.ejs%>
-<div class="container about">
-	<h1>About Us</h1>
-	<h3>We are a company that makes luxury minivans with an emphasis on form over function.</h3>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<div class="sign-cta">
-		<p>Sign up for our newsletter!</p>
-		<a class="sign-up-button" href="#sign-up-form">Sign Up</a>
-	</div>
-	<div class="testimonials-container">
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<main class="container about">
+	<section class="row" id="top-section">
+		<div class="col-12 col-lg-8">
+			<h1 class="display-1">About Us</h1>
+			<h3>We are a company that makes luxury minivans with an emphasis on form over function.</h3>
+		</div>
+		<div class="col-lg-4 px-0">
+			<img src="http://source.unsplash.com/ndiBRRnb7II" class="img-fluid" alt="picture of a van">
+		</div>
+	</section>
+	<section class="row align-items-center">
+		<div class="col-12 col-lg-6">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
-			<cite>Author</cite>
-		</blockquote>
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<cite>Author</cite>
-		</blockquote>
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<cite>Author</cite>
-		</blockquote>
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<cite>Author</cite>
-		</blockquote>
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<cite>Author</cite>
-		</blockquote>
-		<blockquote>
-			<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<cite>Author</cite>
-		</blockquote>
-	</div>
-</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div class="info-card card text-center">
+				<div class="card-header">Some Info</div>
+				<p class="card-text">Random info box for something</p>				
+			</div>
+		</div>
+	</section>
+	
+	<section class="row px-3">
+		<%for(let i = 0; i < 6; i++){%>
+			<div class="quote card col-12 col-lg-4">
+				<div class="card-body">
+					<blockquote class="blockquote">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<cite class="blockquote-footer">Author</cite>
+					</blockquote>
+				</div>
+			</div>
+		<%}%>
+	</section>
+</main>
 <%include partials/footer.ejs%>

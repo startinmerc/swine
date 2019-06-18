@@ -28,8 +28,8 @@ p {
 	font-size: 1.2rem;
 }
 
-.landing .row {
-	height: 50vh;
+.row {
+	min-height: 50vh;
 }
 
 #top-section {
@@ -37,9 +37,9 @@ p {
 	background-position: left;
 }
 
-#top-section h1 {
+.display-1 {
 	color: var(--primary);
-	font-size: 8rem;
+	/*font-size: 8rem;*/
 }
 
 .landing .row:nth-of-type(odd) .landing-section-text {
@@ -78,4 +78,31 @@ p {
 
 #sign-up-form .landing-section-text::before {
 	display: none;
+}
+
+/*ABOUT*/
+.about #top-section {
+	background-color: var(--yellow);
+	min-height: auto;
+}
+
+.about .info-card:nth-of-type(1) {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.about .quote {
+	border-radius: 0;
+}
+.about .quote:nth-of-type(odd){background-color: #E5E5E5}
+.about .quote:nth-of-type(even){background-color: #CECECE}
+
+blockquote p::before {
+	content: '"';
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: -3rem;
+  margin-top: -1rem;
+  margin-right: 0.2rem;
+  float: left;
 }
