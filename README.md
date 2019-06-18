@@ -130,3 +130,10 @@ So a migration to actual bootstrap made a lot more sense.
 #### Blog Pages
 * Add Boostrap classes
 * Add customisation via new CSS
+
+### V2.1
+
+#### Responsive Design
+* Add breakpoint style change for display text
+* Add navbar-collapse button
+* Other breakpoint styling as needed

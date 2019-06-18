@@ -1,5 +1,5 @@
 <%include partials/header.ejs%>
-<div class="container landing">
+<main class="container landing">
 	<section class="row row-large flex-row-reverse" id="top-section">
 		<div class="landing-section-text col-lg-6 d-flex flex-column justify-content-around">
 			<h1 class="display-1">Swine</h1>
@@ -34,16 +34,4 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</section>
-	<section class="row row-large" id="sign-up-form">
-		<div class="landing-section-text col-12 text-center">
-			<h2 class="mt-5 display-4">Sign Up for Our Newsletter</h2>
-			<div class="row justify-content-center">
-				<form class="form-group col-lg-6" action="/newsletter" method="POST">
-					<label for="email"><h3>Email</h3></label>
-					<input class="form-control" type="email" name="email" id="email" placeholder="someone@example.com">
-					<button type="submit" class="btn btn-success btn-block mt-2">Submit</button>
-				</form>
-			</div>
-		</div>
-</div>
 <%include partials/footer.ejs%>
