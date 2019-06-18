@@ -1,19 +1,20 @@
 <%include partials/header.ejs%>
 <div class="container landing">
-	<section  id="top-section">
-		<!-- <div class="leftTriangle"></div> -->
-		<div class="landing-section-text">
-			<h1>Swine</h1>
-			<h3>Luxury minivans</h3>
-			<div class="sign-cta">
-				<p>Sign up for our newsletter!</p>
-				<a class="sign-up-button" href="#sign-up-form">Sign Up</a>
+	<section class="row flex-row-reverse" id="top-section">
+		<div class="landing-section-text col-lg-6 d-flex flex-column justify-content-around">
+			<h1 class="display-1">Swine</h1>
+			<h3 class="ml-5">Luxury minivans</h3>
+			<div class="card newsletter-cta align-self-center">
+				<div class="card-body">
+					<p class="card-text text-center">Sign up for our newsletter!</p>
+					<button class="btn btn-success btn-block" href="#sign-up-form">Sign Up</button>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section >
-		<div class="landing-section-text">
-			<h2>Our Values</h2>
+	<section class="row">
+		<div class="landing-section-text col-lg-7 pl-5">
+			<h2 class="mt-5">Our Values</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -22,9 +23,9 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</section>
-	<section >
-		<div class="landing-section-text">
-		<h2>Our Products</h2>
+	<section class="row flex-row-reverse">
+		<div class="landing-section-text col-lg-7 text-right pr-5">
+		<h2 class="mt-5">Our Products</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -33,16 +34,16 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</section>
-	<section  id="sign-up-form">
-		<div class="landing-section-text">
-			<h2>Sign Up for Our Newsletter</h2>
-			<form action="/newsletter" method="POST">
-				<label for="email"><h3>Email</h3></label>
-				<input type="text" name="email" id="email" placeholder="someone@example.com"><br>
-				<button class="sign-up-button">Submit</button>
-			</form>
+	<section class="row" id="sign-up-form">
+		<div class="landing-section-text col-12 text-center">
+			<h2 class="mt-5 display-4">Sign Up for Our Newsletter</h2>
+			<div class="row justify-content-center">
+				<form class="form-group col-lg-6" action="/newsletter" method="POST">
+					<label for="email"><h3>Email</h3></label>
+					<input class="form-control" type="email" name="email" id="email" placeholder="someone@example.com">
+					<button type="submit" class="btn btn-success btn-block mt-2">Submit</button>
+				</form>
+			</div>
 		</div>
-
 </div>
-
 <%include partials/footer.ejs%>

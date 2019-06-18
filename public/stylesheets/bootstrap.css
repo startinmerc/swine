@@ -1,0 +1,81 @@
+html:root {
+	--primary: #C92E2E;
+	--light-red: #EE6352;
+	--dark-red: #4A1111;
+	--yellow: #F2DC5D;
+	--green: #59CD90;
+	--white: #FBFBFB;
+	--black: #252524;
+
+	--display: 'Muli', sans-serif;
+	--body: 'Barlow', sans-serif;
+}
+
+.display-1,.display-2,.display-3,.display-4,h1,h2,h3,h4 {
+	font-family: var(--display);
+}
+
+p {
+	font-family: var(--body);
+}
+
+.container {
+	background-color: var(--white);
+}
+
+.navbar-light .navbar-brand {
+	color: var(--primary);
+	font-size: 1.2rem;
+}
+
+.landing .row {
+	height: 50vh;
+}
+
+#top-section {
+	/*background-image: url("http://source.unsplash.com/ndiBRRnb7II");*/
+	background-position: left;
+}
+
+#top-section h1 {
+	color: var(--primary);
+	font-size: 8rem;
+}
+
+.landing .row:nth-of-type(odd) .landing-section-text {
+	background-color: var(--yellow);
+}
+
+.landing .row:nth-of-type(even) .landing-section-text {
+	background-color: var(--red);
+}
+
+.landing section:nth-of-type(odd) .landing-section-text::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10vw 50vh 0;
+	border-color: transparent var(--yellow) transparent transparent;
+	left: -10vw;
+}
+
+.landing section:nth-of-type(even) .landing-section-text::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0vw 50vh 10vw;
+	border-color: transparent transparent transparent var(--red);
+	right: -10vw;
+}
+
+.newsletter-cta {
+	width: 15rem;
+}
+
+#sign-up-form .landing-section-text::before {
+	display: none;
+}
