@@ -16,7 +16,7 @@ router.get("/", (req,res) => {
 
 // GET NEW FORM
 router.get("/new", (req,res) => {
-	res.render("products/new")
+	res.render("products/new");
 });
 
 // POST NEW PRODUCT
