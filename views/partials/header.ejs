@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
 	<title>Swine</title>
-	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"> -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,700|Barlow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+
 </head>
 <body>
-	<nav role="navigation">
-		<a class="nav-item" id="nav-brand" href="/">Swine</a>
-		<a class="nav-item" href="/">Home</a>
-		<a class="nav-item" href="/about">About</a>
-		<a class="nav-item" href="/products">Products</a>
-		<a class="nav-item" href="/blog">Blog</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light px-5" role="navigation">
+		<a class="navbar-brand" href="/">Swine</a>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="/about">About</a>
+		      <a class="nav-item nav-link" href="/products">Products</a>
+		      <a class="nav-item nav-link" href="/blog">Blog</a>
+		    </div>
+		  </div>
+			<form class="form-inline">
+			  <button class="btn btn-outline-success" type="button">Sign up for our newsletter!</button>
+			</form>
 	</nav>

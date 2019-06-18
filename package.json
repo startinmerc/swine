@@ -1,6 +1,6 @@
 {
   "name": "swine",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Another node project",
   "main": "app.js",
   "scripts": {

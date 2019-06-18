@@ -91,18 +91,26 @@ Deadline:
 * Add skeleton frame with filler content
 * Add styling
 
-### Product page
+#### Product page
 * Add container
 * Add classes to listings
 * Style listings, including alternate layouts
 * Add zoom transition to images
 
-### Blog page
+#### Blog page
 * Add container
 * Add classes to entries
 * Shorten blog texts
 
-### Show Blog
+#### Show Blog
 * Add show individual blog route
 * Add page
 * Add page container, skeleton frame
+
+### V2
+I realised I was essentially trying to replicate bootstrap with my own CSS,
+So a migration to actual bootstrap made a lot more sense.
+
+###Bootstrap redesign
+* Add to partials
+* Change to new stylesheet
