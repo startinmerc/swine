@@ -1,15 +1,29 @@
 <%include ../partials/header.ejs%>
-<div class="container blogs">
-	<h1>Swine Blog</h1>
-	<%blogs.forEach((blog) => {%>
-		<div class="blog-entry">
-			<a href="blog/<%=blog._id%>"><h3 class="blog-title"><%=blog.title%></h3></a>
-			<div class="blog-image">
-				<img src="<%=blog.image.src%>" 
-					alt="<%=blog.image.src%>">
-			</div>
-			<a href="blog/<%=blog._id%>"><p class="blog-body"><%=blog.body%></p></a>
+<main class="container blogs">
+	<section class="row">
+		<div class="col-12">
+			<h1 class="display-1">Swine Blog</h1>
+			<p>Our company blog</p>
 		</div>
-	<%});%>
-</div>
+	</section>
+	
+	<section class="row flex-column-reverse">
+		<%blogs.forEach((blog) => {%>
+			<div class="col-12 col-lg-6 mx-lg-auto">
+				<div class="card mb-3">
+					<img class="card-img-top" 
+						src="<%=blog.image.src%>" 
+						alt="<%=blog.image.src%>">
+					<div class="card-body pb-0">
+						<a href="blog/<%=blog._id%>"><h3 class="card-title"><%=blog.title%></h3></a>
+						<p class="card-body text-truncate"><%=blog.body%></p>
+					</div>
+					<div class="card-footer text-muted text-center">
+						Created 02/02/02
+					</div>
+				</div>
+			</div>
+		<%});%>
+	</section>
+</main>
 <%include ../partials/footer.ejs%>
