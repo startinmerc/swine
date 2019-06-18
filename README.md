@@ -111,14 +111,22 @@ Deadline:
 I realised I was essentially trying to replicate bootstrap with my own CSS,
 So a migration to actual bootstrap made a lot more sense.
 
-###Bootstrap redesign
+#### Bootstrap redesign
 * Add to partials
 * Change to new stylesheet
 
-###Landing Page
+#### Landing Page
 * Add bootstrap classes
 * Add customisation via new CSS
 
-###About Page
+#### About Page
+* Add Boostrap classes
+* Add customisation via new CSS
+
+#### Product Page
+* Add Boostrap classes
+* Add customisation via new CSS
+
+#### Blog Pages
 * Add Boostrap classes
 * Add customisation via new CSS
