@@ -154,3 +154,10 @@ So a migration to actual bootstrap made a lot more sense.
 * Pass values through body-parser
 * Change seeds
 * Render on show page
+
+### V2.3
+
+#### Support Section
+* Add routes for multiple support pages
+* Set up skeleton pages
+* Add links to navbar via dropdown

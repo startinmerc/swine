@@ -10,6 +10,14 @@ router.get("/about", (req,res) => {
 	res.render("about");
 });
 
+router.get("/support/faq", (req,res) => {
+	res.render("support/faq");
+});
+
+router.get("/support/contact", (req,res) => {
+	res.render("support/contact");
+});
+
 router.post("/newsletter", (req,res) => {
 	let newEmail = {
 		email: req.body.email
