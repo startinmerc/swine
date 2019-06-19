@@ -146,3 +146,11 @@ So a migration to actual bootstrap made a lot more sense.
 
 #### New Pages
 * Add bootstrap to NEW routes
+
+### V2.2
+
+#### Product Features
+* Add checkbox template to new form
+* Pass values through body-parser
+* Change seeds
+* Render on show page

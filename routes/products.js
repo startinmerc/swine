@@ -11,7 +11,7 @@ router.get("/", (req,res) => {
 		} else {
 			res.render("products/index", {products: allProducts});
 		}
-	})
+	});
 });
 
 // GET NEW FORM
@@ -27,16 +27,22 @@ router.post("/", (req,res) => {
 			src: req.body.imgSrc,
 			alt: req.body.imgAlt
 		},
-		features: req.body.features.split(" "),
+		features: [
+				{label: "Wheels", checked: req.body.feature1},
+				{label: "Roof", checked: req.body.feature2},
+				{label: "Engine", checked: req.body.feature3},
+				{label: "Floor", checked: req.body.feature4}
+		],
 		details: req.body.details,
 		price: req.body.price
 	};
+	console.log(newProduct);
 	Product.create(newProduct, (err,newlyCreated) => {
 		if (err) {
 			console.log(err);
 			res.redirect("back");
 		} else {
-			res.redirect("products")
+			res.redirect("products");
 		}
 	});
 });

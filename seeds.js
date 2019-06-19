@@ -10,7 +10,12 @@ const products = [
 			src: "http://source.unsplash.com/ndiBRRnb7II",
 			alt: "Van One product image"
 		},
-		features: ["wheels","windows","doors"],
+		features: [
+			{label: "Wheels", checked:undefined},
+			{label: "Roof", checked: "on"},
+			{label: "Engine", checked: "on"},
+			{label: "Floor", checked:undefined}
+			],
 		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},
@@ -20,7 +25,12 @@ const products = [
 			src: "http://source.unsplash.com/ndiBRRnb7II",
 			alt: "Van One product image"
 		},
-		features: ["wheels","windows","doors"],
+		features: [
+			{label: "Wheels", checked:undefined},
+			{label: "Roof", checked: "on"},
+			{label: "Engine", checked: "on"},
+			{label: "Floor", checked:undefined}
+			],
 		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},
@@ -30,7 +40,12 @@ const products = [
 			src: "http://source.unsplash.com/ndiBRRnb7II",
 			alt: "Van One product image"
 		},
-		features: ["wheels","windows","doors"],
+		features: [
+			{label: "Wheels", checked:undefined},
+			{label: "Roof", checked: "on"},
+			{label: "Engine", checked: "on"},
+			{label: "Floor", checked:undefined}
+			],
 		details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		price: "3000"
 	},

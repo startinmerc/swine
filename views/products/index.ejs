@@ -25,12 +25,14 @@
 					</div>
 					<div class="col-12 col-lg-7 d-flex flex-column justify-content-around">
 						<h3><%=product.name%></h3>
+						<p class="product-details"><%=product.details%></p>
 						<ul class="list-group flex-row">
-							<%product.features.forEach((feature) => {%>
-								<li class="list-group-item feature"><%=feature%></li>
+							<%product.features.forEach((feature,index) => {%>
+								<%if(feature.checked){%>
+									<li class="list-group-item feature p-2"><%=feature.label%></li>
+								<%}%>
 							<%});%>
 						</ul>
-						<p class="product-details"><%=product.details%></p>
 						<p class="product-price">£<%=product.price%></p>
 					</div>
 				</div>
