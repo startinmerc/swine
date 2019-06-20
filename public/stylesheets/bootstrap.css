@@ -188,5 +188,4 @@ blockquote p::before {
 .contact #top-section, .faq #top-section {
 	background-color: var(--yellow);
 	background: var(--yellow-gradient);
-	py-5
 }
