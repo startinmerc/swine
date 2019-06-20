@@ -161,3 +161,7 @@ So a migration to actual bootstrap made a lot more sense.
 * Add routes for multiple support pages
 * Set up skeleton pages
 * Add links to navbar via dropdown
+
+#### Add Font-Awesome
+* Link in header
+* Add icons where needed
