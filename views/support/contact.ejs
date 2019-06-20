@@ -1,4 +1,47 @@
 <%include ../partials/header.ejs%>
 <main class="container">
-	<h1>CONTACT</h1>
+	<div class="row">
+			<h1 class="display-1">Contact Us</h1>
+	</div>
+	<div class="row">
+		<form class="col-12 col-lg-6">
+			<div class="form-group">
+				<label for="email">Your Email address</label>
+				<input type="email" class="form-control" id="email" placeholder="name@example.com">
+			</div>
+			<div class="form-group">
+				<label for="order-number">Your Order Number</label>
+				<input type="number" class="form-control" id="order-number" placeholder="AB123456789">
+			</div>
+			<div class="form-group">
+				<label for="subject">What is the subject of your message?</label>
+				<select class="form-control" id="subject">
+					<option>Service 1</option>
+					<option>Service 2</option>
+					<option>Service 3</option>
+					<option>Service 4</option>
+					<option>Service 5</option>
+				</select>
+				</div>
+				<div class="form-group">
+					<label for="text-area">Your Message</label>
+					<textarea class="form-control" id="text-area" rows="3"></textarea>
+			</div>
+		</form>
+		<div class="col-12 col-lg-6">
+			<h2>Need to contact us?</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<h3>Social</h3>
+			<a class="" href="https://twitter.com"><i class="fab fa-4x fa-twitter-square"></i></a>
+			<a class="" href="https://instagram.com"><i class="fab fa-4x fa-instagram"></i></a>
+			<a class="" href="https://facebook.com"><i class="fab fa-4x fa-facebook-square"></i></a>
+		</div>
+	</div>
 <%include ../partials/footer.ejs%>
