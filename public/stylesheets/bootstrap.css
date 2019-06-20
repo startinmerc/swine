@@ -1,15 +1,18 @@
 html:root {
 	--primary: #C92E2E;
-	--light-red: #EE6352;
-	--dark-red: #4A1111;
 	--yellow: #F2DC5D;
-	--green: #59CD90;
 	--white: #FBFBFB;
+	--lightgrey: #EFEFEF;
 	--black: #252524;
+
+	--yellow-gradient: linear-gradient(-90deg, rgb(255,240,155) 0%, rgb(242,220,93) 50%);
+	--red-gradient: linear-gradient(90deg, rgba(219,101,101,1) 0%, rgba(201,46,46,1) 50%);
 
 	--display: 'Muli', sans-serif;
 	--body: 'Barlow', sans-serif;
 }
+
+/*GLOBAL STYLES*/
 
 .display-1,.display-2,.display-3,.display-4,h1,h2,h3,h4 {
 	font-family: var(--display);
@@ -23,17 +26,19 @@ p {
 	background-color: var(--white);
 }
 
-.navbar-light .navbar-brand {
-	color: var(--primary);
-	font-size: 1.6rem;
-}
-
 .row-large {
 	min-height: 50vh;
 }
 
 .display-1 {
 	color: var(--primary);
+}
+
+/*PARTIALS STYLES*/
+
+.navbar-light .navbar-brand {
+	color: var(--primary);
+	font-size: 1.6rem;
 }
 
 nav a {
@@ -43,6 +48,7 @@ nav a {
 
 #sign-up-form {
 	background-color: var(--primary);
+	background: linear-gradient(90deg, rgb(219,101,101) 10%, rgb(201,46,46) 30%, rgb(201,46,46) 70%, rgb(219,101,101) 90%);
 }
 
 #sign-up-form .landing-section-text::before {
@@ -56,24 +62,36 @@ footer a {
 footer a:hover, footer a:focus {
 	color: var(--primary);
 }
-/*
-footer .list-group-item {
-	border: none;
-}
-*/
+
 /*LANDING*/
 
 .landing #top-section {
-	/*background-image: url("http://source.unsplash.com/ndiBRRnb7II");*/
+	background-image: url("http://source.unsplash.com/ndiBRRnb7II");
+	background-position: left;
+}
+
+.landing .row {
+	background-size: contain;
+}
+
+.landing .row:nth-of-type(2) {
+	background-image: url("http://source.unsplash.com/Dp7d8vPhiM0");
+	background-position: right;
+}
+
+.landing .row:nth-of-type(3) {
+	background-image: url("http://source.unsplash.com/iVXfOilGYHA");
 	background-position: left;
 }
 
 .landing .row:nth-of-type(odd) .landing-section-text {
 	background-color: var(--yellow);
+	background: var(--yellow-gradient);
 }
 
 .landing .row:nth-of-type(even) .landing-section-text {
-	background-color: var(--red);
+	background-color: var(--primary);
+	background: var(--red-gradient);
 }
 
 .landing section:nth-of-type(odd) .landing-section-text::before {
@@ -94,7 +112,7 @@ footer .list-group-item {
 	height: 0;
 	border-style: solid;
 	border-width: 0 0vw 50vh 10vw;
-	border-color: transparent transparent transparent var(--red);
+	border-color: transparent transparent transparent var(--primary);
 	right: -10vw;
 }
 
@@ -103,9 +121,11 @@ footer .list-group-item {
 }
 
 /*ABOUT*/
+
 .about #top-section {
 	background-color: var(--yellow);
 	min-height: auto;
+	background: var(--yellow-gradient);
 }
 
 .about .info-card:first-of-type {
@@ -116,8 +136,13 @@ footer .list-group-item {
 .about .quote {
 	border-radius: 0;
 }
-.about .quote:nth-of-type(odd){background-color: #E5E5E5}
-.about .quote:nth-of-type(even){background-color: #CECECE}
+
+.about .quote:nth-of-type(odd){
+	background-color: var(--lightgrey);
+}
+.about .quote:nth-of-type(even){
+	background-color: var(--white);
+}
 
 blockquote p::before {
 	content: '"';
@@ -132,12 +157,13 @@ blockquote p::before {
 /*PRODUCTS*/
 .products #top-section {
 	background-color: var(--yellow);
+	background: var(--yellow-gradient);
 	min-height: auto;
 }
 
 .product-section:nth-of-type(even) .row {flex-direction: row-reverse;}
 .product-section:nth-of-type(even) .d-flex {align-items: flex-end;}
-.product-section:nth-of-type(even) {text-align: right;}
+.product-section:nth-of-type(even) {text-align: right; background-color: var(--lightgrey);}
 
 .feature:first-of-type {
 	border-radius: 0.25rem 0 0 0.25rem;
@@ -156,4 +182,11 @@ blockquote p::before {
 	.display-1 {
 		font-size: 2rem;
 	}
+}
+
+/*SUPPORT*/
+.contact #top-section, .faq #top-section {
+	background-color: var(--yellow);
+	background: var(--yellow-gradient);
+	py-5
 }

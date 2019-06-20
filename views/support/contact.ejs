@@ -1,10 +1,10 @@
 <%include ../partials/header.ejs%>
-<main class="container">
-	<div class="row">
+<main class="container contact">
+	<div class="row py-5" id="top-section">
 			<h1 class="display-1">Contact Us</h1>
 	</div>
-	<div class="row">
-		<form class="col-12 col-lg-6">
+	<div class="row py-3">
+		<form class="col-12 col-lg-6" action="/contact" method="POST">
 			<div class="form-group">
 				<label for="email">Your Email address</label>
 				<input type="email" class="form-control" id="email" placeholder="name@example.com">
@@ -23,10 +23,11 @@
 					<option>Service 5</option>
 				</select>
 				</div>
-				<div class="form-group">
-					<label for="text-area">Your Message</label>
-					<textarea class="form-control" id="text-area" rows="3"></textarea>
+			<div class="form-group">
+				<label for="text-area">Your Message</label>
+				<textarea class="form-control" id="text-area" rows="3"></textarea>
 			</div>
+			<button type="submit" class="btn btn-primary btn-block">Submit</button>
 		</form>
 		<div class="col-12 col-lg-6">
 			<h2>Need to contact us?</h2>
