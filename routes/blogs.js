@@ -39,6 +39,7 @@ router.post("/", (req,res) => {
 			alt: req.body.imgAlt
 		},
 		body: req.body.body,
+		date: new Date
 	};
 	Blog.create(newBlog, (err,newlyCreated) => {
 		if (err) {

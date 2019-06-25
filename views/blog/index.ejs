@@ -14,13 +14,13 @@
 				<div class="card mb-3">
 					<img class="card-img-top" 
 						src="<%=blog.image.src%>" 
-						alt="<%=blog.image.src%>">
+						alt="<%=blog.image.alt%>">
 					<div class="card-body pb-0">
 						<a href="blog/<%=blog._id%>"><h3 class="card-title"><%=blog.title%></h3></a>
 						<p class="card-body text-truncate"><%=blog.body%></p>
 					</div>
 					<div class="card-footer text-muted text-center">
-						Created 02/02/02
+						Created <%=blog.date%>
 					</div>
 				</div>
 			</div>

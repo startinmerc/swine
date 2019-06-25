@@ -6,7 +6,11 @@ const blogSchema = new mongoose.Schema({
 		src: String,
 		alt: String
 	},
-	body: String
+	body: String,
+	date: {
+		type: Date,
+		default: Date.now
+	}
 });
 
 module.exports = mongoose.model("Blog", blogSchema);

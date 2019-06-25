@@ -169,3 +169,8 @@ So a migration to actual bootstrap made a lot more sense.
 #### Style tweaks
 * Add gradients to sections
 * Adjust padding on sections for better spacing
+
+#### Blog Date created
+* Add date to blog schema with default
+* Include in seeds
+* Add to NEW route

@@ -54,6 +54,7 @@ const products = [
 const blogs = [
 	{
 		title: "Blog One",
+		date: new Date,
 		image: { 
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
@@ -62,6 +63,7 @@ const blogs = [
 	},
 	{
 		title: "Blog Two",
+		date: new Date,
 		image: { 
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
@@ -70,6 +72,7 @@ const blogs = [
 	},
 	{
 		title: "Blog Three",
+		date: new Date,
 		image: { 
 			src: "http://source.unsplash.com/random/400x300",
 			alt: "Blog image"
